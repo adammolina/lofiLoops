@@ -1,7 +1,10 @@
-window.onload = function(){
-  console.log()
-""}
+let button = document.querySelector('button');
+let attribute = document.querySelector('audio').getAttribute('muted');
 
-
-var loop1 = document.getElementById("lofiNoise");
-loop.muted = false;
+button.onclick = () => {
+  if (attribute == false) {
+    document.querySelector("audio").setAttribute("muted","true");
+  } else {
+    document.querySelector("audio").setAttribute("muted","false");
+  }
+};
