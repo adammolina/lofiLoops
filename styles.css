@@ -1,13 +1,12 @@
 body {
   background-color: #E6BBE2;
-  padding: none;
-  margin: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 img {
   height: auto;
-  width: 60%;
-  padding-bottom: 2rem;
+  width: 100%;
 }
 
 .header-block {
