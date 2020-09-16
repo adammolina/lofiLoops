@@ -1,7 +1,5 @@
-let button = document.querySelector('button');
-let attribute =
+var a = document.getElementById("lofiNoise");
 
-button.onclick = () => {
-
-  document.querySelector('audio').setAttribute("muted", "false");
-};
+        function toggleAudio() {
+            a.muted = true;
+        }
