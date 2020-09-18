@@ -4,11 +4,19 @@ window.addEventListener('load', (event) => {
 });
 
 var a = document.getElementById("lofiNoise");
-
-function toggleAudio() {
-  if (a.muted = true) {
+function toggleOn() {
     a.muted = false;
-  } else {
-    a.setAttribute("muted", "true");
-  }
+}
+
+function toggleOff() {
+    a.muted = true;
+}
+
+var b = document.getElementById("bassLoop");
+function toggleOn() {
+    b.muted = false;
+}
+
+function toggleOff() {
+    b.muted = true;
 }
