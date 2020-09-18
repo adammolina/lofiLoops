@@ -3,20 +3,48 @@ window.addEventListener('load', (event) => {
   audioTag.setAttribute("muted", "true");
 });
 
-var a = document.getElementById("lofiNoise");
-function toggleOn() {
-    a.muted = false;
+var noise = document.getElementById("lofiNoise");
+var bass = document.getElementById("bassLoop");
+var kick = document.getElementById("kickLoop");
+var drums = document.getElementById("drumLoop");
+var horns = document.getElementById("hornLoop");
+
+function toggleNoiseOn() {
+    noise.muted = false;
 }
 
-function toggleOff() {
-    a.muted = true;
+function toggleNoiseOff() {
+    noise.muted = true;
 }
 
-var b = document.getElementById("bassLoop");
-function toggleOn() {
-    b.muted = false;
+function toggleBassOn() {
+    bass.muted = false;
 }
 
-function toggleOff() {
-    b.muted = true;
+function toggleBassOff() {
+    bass.muted = true;
+}
+
+function toggleKicksOn() {
+    kick.muted = false;
+}
+
+function toggleKicksOff() {
+    kick.muted = true;
+}
+
+function toggleDrumsOn() {
+    drums.muted = false;
+}
+
+function toggleDrumsOff() {
+    drums.muted = true;
+}
+
+function toggleHornsOn() {
+    horns.muted = false;
+}
+
+function toggleHornsOff() {
+    horns.muted = true;
 }
