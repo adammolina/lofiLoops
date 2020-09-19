@@ -5,7 +5,7 @@ window.addEventListener('load', (event) => {
   audioElementBass.addEventListener("canplaythrough", event => {
     audioElementBass.play();
     audioElementBass.loop = true;
-    audioElementBass.muted = true;
+    audioElementBass.muted = false;
   });
 
 });
