@@ -1,7 +1,22 @@
 window.addEventListener('load', (event) => {
-  var audioTag = document.queryselector("audio");
-  audioTag.setAttribute("muted", "true");
+
+  var audioElementBass = new Audio('loops/bassLoop.mp3');
+
+  audioElementBass.addEventListener("canplaythrough", event => {
+    audioElementBass.play();
+    audioElementBass.loop = true;
+    audioElementBass.muted = true;
+  });
+
 });
+
+
+
+
+
+
+
+
 
 var noise = document.getElementById("lofiNoise");
 var bass = document.getElementById("bassLoop");
